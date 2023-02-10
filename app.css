@@ -1,0 +1,129 @@
+*{ /* this removes the basic/default styling that comes with the browser*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*background-image: linear-gradient(120deg,yellow,orange,blue) ;*/
+    background-color: rgb(137, 126, 126);
+    color: beige;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    
+}
+header{
+    font-weight: bold;
+    color: black;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 0 ;
+    background: black;
+    outline: 1px;
+    border-radius: 0px;
+    color: white;
+}
+form button{
+    color:rgb(252, 252, 252) ;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: black;
+}
+
+form button:hover{
+    color: rgb(51, 24, 92);
+    
+}
+
+::placeholder{
+    font-size: smaller;
+    color: rgb(201, 192, 192);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 40%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: rgb(204, 186, 222);
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    transition: all 0.3s ease;
+
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn, .complete-btn{
+    background: rgb(13, 13, 13);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 5vh;
+}
+.complete-btn{
+    background-color: rgb(51, 24, 92);
+}
+.todo-item{
+    padding: 0rem 0.7rem;
+    
+}
+.fa-check,.fa-trash{
+    pointer-events: none;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20de);
+    opacity: 0;
+}
+
+/*select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    width: 10rem;
+    color: rgb(104, 95, 122);
+    cursor: pointer;
+    padding:0.5rem ;
+    height: 42px;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: rgb(42, 17, 80);
+    top: 0;
+    right: 0;
+    padding: 0.6rem;
+    pointer-events: none;
+}*/
